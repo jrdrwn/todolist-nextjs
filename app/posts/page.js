@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Title from "../components/Title";
 
 export const metadata = {
   title: "Posts",
@@ -16,7 +17,7 @@ const Posts = async () => {
 
   return (
     <div>
-      <h1 className="text-4xl my-8 text-center font-bold underline">Posts</h1>
+      <Title judul="Posts" />
       <ul className="flex flex-row flex-wrap gap-4 justify-center">
         {posts.map((post) => (
           <a

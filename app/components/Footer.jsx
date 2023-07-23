@@ -7,7 +7,10 @@ const Footer = () => {
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="mx-auto text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {currentYear}{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a
+              href="https://www.instagram.com/rahmat710_/"
+              className="hover:underline"
+            >
               Rahmat
             </a>
             . All Rights Reserved.

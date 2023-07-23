@@ -1,7 +1,7 @@
 const loading = () => {
   return (
     <>
-      <div class="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div role="status">
           <svg
             aria-hidden="true"

@@ -1,3 +1,5 @@
+import Title from "../components/Title";
+
 export const metadata = {
   title: "About",
   description: "Created by Me",
@@ -6,7 +8,7 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <div>
-      <h1 className="text-4xl my-8 text-center font-bold underline">About</h1>
+      <Title judul="About" />
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
         fugiat quae nesciunt voluptas ipsa natus porro ratione excepturi rerum
