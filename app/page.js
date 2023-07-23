@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Home",
+  description: "Created by Me",
+};
+
 const HomePage = () => {
   return (
     <>

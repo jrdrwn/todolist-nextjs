@@ -1,4 +1,7 @@
-import React from "react";
+export const metadata = {
+  title: "About",
+  description: "Created by Me",
+};
 
 const AboutPage = () => {
   return (
