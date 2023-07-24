@@ -8,9 +8,12 @@ export const metadata = {
 };
 
 async function getTodosData() {
-  const res = await fetch("http://localhost:3000/api/posts", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    proses.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/posts",
+    {
+      cache: "no-store",
+    }
+  );
   if (!res.ok) {
     throw new Error(res.status);
   }
