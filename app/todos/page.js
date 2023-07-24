@@ -13,7 +13,7 @@ const apiUrl =
   process.env.NEXT_LOCAL_API_URL || process.env.NEXT_PUBLIC_API_URL;
 
 async function getTodosData() {
-  const res = await fetch(apiUrl, {
+  const res = await fetch(apiUrl + "/api/posts", {
     cache: "no-store",
   });
   if (!res.ok) {
