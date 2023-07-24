@@ -61,7 +61,7 @@ const AddTodo = () => {
             />
           </div>
           <div>
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Content
             </label>
             <textarea

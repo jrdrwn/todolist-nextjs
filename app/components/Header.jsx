@@ -11,6 +11,7 @@ const Header = () => {
   };
 
   const pathname = usePathname();
+  console.log(pathname);
 
   const navItems = [
     {
