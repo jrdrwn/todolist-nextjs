@@ -15,6 +15,8 @@ async function getTodosData() {
     throw new Error(res.status);
   }
   const todos = await res.json();
+  // Sort the todos based on the createdAt date in descending order
+  todos.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
   return todos;
 }
 

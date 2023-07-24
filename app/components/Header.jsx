@@ -45,7 +45,7 @@ const Header = () => {
                             alt="Flowbite Logo"
                         /> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Rahmat Budianoor
+              Rahmat
             </span>
           </a>
           <div className="flex md:order-2">

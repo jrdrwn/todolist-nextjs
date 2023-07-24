@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Title from "../components/Title";
 
 export const metadata = {
