@@ -2,18 +2,20 @@ import AddTodo from "../components/AddTodo";
 import Title from "../components/Title";
 import TodoList from "../components/TodoList";
 
+require("dotenv").config();
+
 export const metadata = {
   title: "To Do List",
   description: "Created by Me",
 };
 
+const apiUrl =
+  process.env.NEXT_LOCAL_API_URL || process.env.NEXT_PUBLIC_API_URL;
+
 async function getTodosData() {
-  const res = await fetch(
-    proses.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/posts",
-    {
-      cache: "no-store",
-    }
-  );
+  const res = await fetch(apiUrl, {
+    cache: "no-store",
+  });
   if (!res.ok) {
     throw new Error(res.status);
   }
